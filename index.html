@@ -113,7 +113,7 @@ footer { border-top: 2px solid var(--ink); padding-top: 22px; display: flex; jus
     <div class="summary">
       <div><b>1,100+</b><span>automated tests</span></div>
       <div><b>6</b><span>languages: TS, Python, Java, C#, Go, Kotlin</span></div>
-      <div><b>84</b><span>bug reports with steps and a pinned test</span></div>
+      <div><b>89</b><span>bug reports with steps and a pinned test</span></div>
       <div><b>100 %</b><span>of planted bugs caught in own services</span></div>
     </div>
   </section>
@@ -138,7 +138,7 @@ footer { border-top: 2px solid var(--ink); padding-top: 22px; display: flex; jus
     <div class="group">
       <span class="label">UI and mobile</span>
       <div class="suite"><span class="tick" aria-hidden="true"></span><div class="body"><div class="name"><h3>ui-e2e-testing</h3><span class="lang">TypeScript</span></div><p>OWASP Juice Shop in 5 browsers and devices: Page Objects, WCAG 2.2 AA accessibility, visual regression, Lighthouse CI budgets; 22 defects.</p><div class="links"><a href="https://github.com/NailKarimov/ui-e2e-testing">code</a><a href="https://nailkarimov.github.io/ui-e2e-testing/">report</a><a href="https://nailkarimov.github.io/ui-e2e-testing/a11y-visual.html">guide</a></div></div><div class="count">217<small>tests</small></div></div>
-      <div class="suite"><span class="tick" aria-hidden="true"></span><div class="body"><div class="name"><h3>3sMoneyTests</h3><span class="lang">TypeScript</span></div><p>Independent audit of a fintech website: functional, responsive, accessibility, performance, SEO, GDPR consent; 12 defects, one fixed by the site.</p><div class="links"><a href="https://github.com/NailKarimov/3sMoneyTests">code</a><a href="https://nailkarimov.github.io/3sMoneyTests/">report</a><a href="https://github.com/NailKarimov/3sMoneyTests/issues">bug reports</a></div></div><div class="count">64<small>tests</small></div></div>
+      <div class="suite"><span class="tick" aria-hidden="true"></span><div class="body"><div class="name"><h3>web-quality-audit</h3><span class="lang">TypeScript</span></div><p>Web audit of a training shop on its bug build, with the clean build as the reference: functional, content, accessibility, SEO, responsive, speed, API; 17 defects.</p><div class="links"><a href="https://github.com/NailKarimov/web-quality-audit">code</a><a href="https://nailkarimov.github.io/web-quality-audit/">report</a><a href="https://nailkarimov.github.io/web-quality-audit/web-audit.html">guide</a></div></div><div class="count">86<small>runs</small></div></div>
       <div class="suite"><span class="tick" aria-hidden="true"></span><div class="body"><div class="name"><h3>android-testing</h3><span class="lang">Kotlin</span></div><p>An own Android app tested with JUnit, Espresso and Appium 3 on an emulator in GitHub Actions; 7/7 planted bugs caught.</p><div class="links"><a href="https://github.com/NailKarimov/android-testing">code</a><a href="https://nailkarimov.github.io/android-testing/">report</a><a href="https://nailkarimov.github.io/android-testing/android.html">guide</a></div></div><div class="count">33<small>tests</small></div></div>
     </div>
 
@@ -153,12 +153,12 @@ footer { border-top: 2px solid var(--ink); padding-top: 22px; display: flex; jus
   </section>
 
   <section aria-labelledby="find-h">
-    <div class="section-head"><h2 id="find-h">Selected findings</h2><a class="mono" href="https://github.com/users/NailKarimov/projects/2">all 84 on the defect board →</a></div>
+    <div class="section-head"><h2 id="find-h">Selected findings</h2><a class="mono" href="https://github.com/users/NailKarimov/projects/2">all 89 on the defect board →</a></div>
     <div class="findings">
       <div class="finding"><span class="sev">critical · Sock Shop · SS-13</span><h3>Anyone can read another customer's card</h3><p>Without logging in, a guessable customer id returns the full card number, CCV and address (OWASP API1, BOLA).</p></div>
       <div class="finding"><span class="sev">critical · Juice Shop · UI-SEC-1</span><h3>DOM XSS through the search box</h3><p>The search term is bound as HTML, so a crafted link runs script in the shopper's browser.</p></div>
       <div class="finding"><span class="sev">critical · own service · found by Locust</span><h3>A threading bug only load could show</h3><p>One SQLite connection shared by worker threads: 0.3 % of requests failed under 30 users while every functional test was green.</p></div>
-      <div class="finding"><span class="sev">critical · 3s.money · BUG-009</span><h3>Trackers run before cookie consent</h3><p>Analytics start before any choice and keep sending after "Decline", a GDPR and PECR issue for a UK fintech.</p></div>
+      <div class="finding"><span class="sev">major · Toolshop · WQA-16</span><h3>Tab skips the password field</h3><p>On the login form, Tab from the e-mail field lands on the Login button, so keyboard users send the form without a password (WCAG 2.4.3). The clean build passes the same test.</p></div>
     </div>
   </section>
 
