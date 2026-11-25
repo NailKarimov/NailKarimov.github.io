@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nail Karimov — QA Automation</title>
-<meta name="description" content="Test automation portfolio of Nail Karimov, QA automation engineer in Riga: 14 repositories, 1,100+ automated tests in six languages, 89 bug reports.">
+<meta name="description" content="Test automation portfolio of Nail Karimov, QA automation engineer in Riga: 17 repositories, 1,800+ automated tests in six languages, 89 bug reports, and device protocols from Modbus to OCPP.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -90,13 +90,13 @@ section { display: grid; gap: 18px; }
 footer { border-top: 2px solid var(--ink); padding-top: 22px; display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; color: var(--muted); font-size: 0.95rem; }
 </style>
 <meta property="og:title" content="Nail Karimov — QA Automation">
-<meta property="og:description" content="14 repositories, 1,100+ automated tests in six languages, 89 bug reports.">
+<meta property="og:description" content="17 repositories, 1,800+ automated tests in six languages, 89 bug reports, and device protocols from Modbus to OCPP.">
 <meta property="og:url" content="https://nailkarimov.github.io/">
 </head>
 <body>
 <div class="page">
   <header class="cover">
-    <span class="verdict">14 repositories · CI green</span>
+    <span class="verdict">17 repositories · CI green</span>
     <h1>Nail Karimov</h1>
     <span class="role">QA Automation Engineer · ISTQB CTFL · Riga, Latvia</span>
     <p class="lead">14 years in software testing, 7 in test automation: banking and fintech, telecom billing, automotive e-commerce and access-control systems. This portfolio shows the same testing ideas in six languages, each project running in GitHub Actions with its reports published.</p>
@@ -111,7 +111,7 @@ footer { border-top: 2px solid var(--ink); padding-top: 22px; display: flex; jus
 
   <section aria-label="Portfolio summary">
     <div class="summary">
-      <div><b>1,100+</b><span>automated tests</span></div>
+      <div><b>1,800+</b><span>automated tests</span></div>
       <div><b>6</b><span>languages: TS, Python, Java, C#, Go, Kotlin</span></div>
       <div><b>89</b><span>bug reports with steps and a pinned test</span></div>
       <div><b>100 %</b><span>of planted bugs caught in own services</span></div>
@@ -143,6 +143,12 @@ footer { border-top: 2px solid var(--ink); padding-top: 22px; display: flex; jus
     </div>
 
     <div class="group">
+      <span class="label">Devices and energy protocols</span>
+      <div class="suite"><span class="tick" aria-hidden="true"></span><div class="body"><div class="name"><h3>solar-inverter-testing</h3><span class="lang">Python</span></div><p>An own 5 kW solar inverter on Modbus RTU and TCP with the SunSpec map, tested by three independent clients: hand-built frames, pymodbus and the official SunSpec client; 38/38 planted bugs caught.</p><div class="links"><a href="https://github.com/NailKarimov/solar-inverter-testing">code</a><a href="https://nailkarimov.github.io/solar-inverter-testing/">report</a><a href="https://nailkarimov.github.io/solar-inverter-testing/solar-inverter.html">guide</a></div></div><div class="count">359<small>tests</small></div></div>
+      <div class="suite"><span class="tick" aria-hidden="true"></span><div class="body"><div class="name"><h3>ev-charging-testing</h3><span class="lang">Python</span></div><p>An own charge point speaking OCPP 1.6J and 2.0.1 over WebSocket, every message judged by the schemas published with the standard and the reference library at the other end of the socket; 41/41 planted bugs caught.</p><div class="links"><a href="https://github.com/NailKarimov/ev-charging-testing">code</a><a href="https://nailkarimov.github.io/ev-charging-testing/">report</a><a href="https://nailkarimov.github.io/ev-charging-testing/ev-charging.html">guide</a></div></div><div class="count">269<small>tests</small></div></div>
+      <div class="suite"><span class="tick" aria-hidden="true"></span><div class="body"><div class="name"><h3>solar-surplus-charging</h3><span class="lang">Python</span></div><p>A controller that charges a car from the roof's surplus, with its three promises priced in kilowatt-hours over whole days and one control law driven through a model, a Modbus wallbox and an OCPP station; 38/38 planted bugs caught.</p><div class="links"><a href="https://github.com/NailKarimov/solar-surplus-charging">code</a><a href="https://nailkarimov.github.io/solar-surplus-charging/">report</a><a href="https://nailkarimov.github.io/solar-surplus-charging/surplus-charging.html">guide</a></div></div><div class="count">135<small>tests</small></div></div>
+    </div>
+    <div class="group">
       <span class="label">The same ideas in other languages</span>
       <div class="suite"><span class="tick" aria-hidden="true"></span><div class="body"><div class="name"><h3>python-testing</h3><span class="lang">Python</span></div><p>pytest, Hypothesis against an oracle, Schemathesis and Locust on an own Bookshop API; Locust found a threading bug every functional test missed.</p><div class="links"><a href="https://github.com/NailKarimov/python-testing">code</a><a href="https://nailkarimov.github.io/python-testing/">report</a><a href="https://nailkarimov.github.io/python-testing/python.html">guide</a><a href="https://github.com/NailKarimov/python-testing/pull/6">demo PR: CI rejects a bug</a></div></div><div class="count">77<small>tests</small></div></div>
       <div class="suite"><span class="tick" aria-hidden="true"></span><div class="body"><div class="name"><h3>java-testing</h3><span class="lang">Java</span></div><p>REST Assured, WireMock with call counts, Cucumber and Pact JVM on an own Library API; 88 % line coverage, 14/14 planted bugs caught.</p><div class="links"><a href="https://github.com/NailKarimov/java-testing">code</a><a href="https://nailkarimov.github.io/java-testing/">report</a><a href="https://nailkarimov.github.io/java-testing/java.html">guide</a></div></div><div class="count">89<small>tests</small></div></div>
@@ -158,6 +164,7 @@ footer { border-top: 2px solid var(--ink); padding-top: 22px; display: flex; jus
       <div class="finding"><span class="sev">critical · Sock Shop · SS-13</span><h3>Anyone can read another customer's card</h3><p>Without logging in, a guessable customer id returns the full card number, CCV and address (OWASP API1, BOLA).</p></div>
       <div class="finding"><span class="sev">critical · Juice Shop · UI-SEC-1</span><h3>DOM XSS through the search box</h3><p>The search term is bound as HTML, so a crafted link runs script in the shopper's browser.</p></div>
       <div class="finding"><span class="sev">critical · own service · found by Locust</span><h3>A threading bug only load could show</h3><p>One SQLite connection shared by worker threads: 0.3 % of requests failed under 30 users while every functional test was green.</p></div>
+      <div class="finding"><span class="sev">critical · own charge point · EVC-5</span><h3>After a reconnect, the bill went to the wrong session</h3><p>OCPP 1.6 gives a transaction its number in the cloud's answer, but the station queued ready-made messages while offline, so the end of a session named a transaction that was not its own.</p></div>
       <div class="finding"><span class="sev">major · Toolshop · WQA-16</span><h3>Tab skips the password field</h3><p>On the login form, Tab from the e-mail field lands on the Login button, so keyboard users send the form without a password (WCAG 2.4.3). The clean build passes the same test.</p></div>
     </div>
   </section>
